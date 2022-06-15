@@ -1,0 +1,57 @@
+.img-content {
+    width: 765px;
+    height: 400px;
+  }
+  .text-content {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  /* Comecei do menor - mobile first */
+  @media (max-width: 2560px) and (min-width:1440px){
+    .img-content{
+      width: 1280px;
+      height: 600px;
+    }
+    .text-content{
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width:790px){
+    .img-content{
+      width: 90%;
+      height: auto;
+    }
+
+    .text-content{
+      text-align: center;
+    }
+
+    .tittle-content{
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 425px){
+    .img-content{
+      width: 100%;
+      height: auto;
+    }
+
+    .tittle-content{
+      text-align: center;
+    }
+
+    .text-content{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 320px){
+    .text-content{
+      font-size: 14px;
+    }
+  }
