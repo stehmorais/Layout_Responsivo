@@ -1,2 +1,2 @@
 # Layout_Responsivo
-Base de um layout com flexbox 
+Layouts básicos que desenvolvi para aplicar responsividade
