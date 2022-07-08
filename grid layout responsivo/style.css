@@ -124,11 +124,7 @@ span {
     align-items: center;
     grid-area: sidebar-content;
     gap: 20px;
-    padding-left: 70px;
-}
-
-.sideparagraph {
-    padding-right: 50px;
+    padding:16px;
 }
 
 .sidebarCard {
