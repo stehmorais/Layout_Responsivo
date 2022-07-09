@@ -1,5 +1,5 @@
 # Layout_Responsivo
-Layouts básicos que desenvolvi para aplicar responsividade
+- Layouts básicos que desenvolvi para aplicar responsividade
 
 > Através do Curso da Onebitcode aprendi a como desenvolver páginas web responsivas.
 <br>
