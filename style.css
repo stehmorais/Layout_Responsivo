@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* para a hora da responsividade */
+    flex-wrap: wrap;
+    min-height: 40px;
+    gap: 8px 15px; 
+}
+
+.logo-header {
+    width: 180px;
+}
+
+
+.headerbuttongroups {
+    display: flex;
+    gap: 10px;
+}
+
+.button-header {
+    background-color: transparent;
+    border: 2px dotted transparent;
+    color: rgb(216, 213, 213);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+
+.button-header:hover {
+    border-bottom: 2px dotted red;
+    transition: 0.4s;
+}
+
+.sectionTittle {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sectionDescription {
+    font-size: 16px;
+    text-align: center;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.card-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar-content main-content";
+    padding-top: 30px;
+    flex: 1 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    grid-area: main-content;
+    padding: 10px;
+}
+
+.categoryCard {
+    width: 280px;
+    height: 380px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.categoryCard:hover {
+    border-color: black;
+}
+.mainCardImg {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.mainCardTittle {
+    padding: 6px;
+    text-align: center;
+}
+
+.mainCardDescription {
+    text-align: center;
+}
+
+
+.sidebar-content {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebar-content;
+    gap: 20px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.sidebarCard {
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sidebarCard:hover {
+    border-color: gainsboro;
+}
+
+.sidebarCardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+.sidebarCardTittle {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+.rodape {
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    padding: 25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* para a hora da responsividade */
+    min-height: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-footer {
+    width: 180px;
+}
+
+.footerAnchor{
+    color: white;
+    text-decoration: none;
+}
+
+.footerAnchor:hover{
+    color: red;
+    transition: 0.4s;
+}
+@media(max-width:630px){
+    .card-section{
+        grid-template-areas: 
+        "main-content"
+        "sidebar-content";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+
+    }
+
+    .sidebar-content{
+        min-width: auto;
+    }
+
+    .footerAnchor{
+        font-size: 19px;
+    }
+}
+
+@media(max-width:463px){
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .rodape{
+        justify-content: center;
+    }
+}
